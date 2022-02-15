@@ -1,0 +1,1 @@
+/home/bjoern/Documents/Projects/CMOR/cmip6-cmor-tables/data/CMIP6/LongRunMIP/MPI-M/MPI-ESM1-2-LR/abrupt2xCO2/r1i1p1f1/Omon/rho/gn/v20220215/rho_Omon_MPI-ESM1-2-LR_abrupt2xCO2_r1i1p1f1_gn_185001-185012.nc

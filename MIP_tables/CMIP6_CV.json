@@ -5,8 +5,8 @@
             "activity_id",
             "creation_date",
             "data_specs_version",
-            "experiment",
             "experiment_id",
+            "experiment",
             "forcing_index",
             "frequency",
             "further_info_url",
@@ -43,30 +43,17 @@
             "specs_doc":"v6.2.7 (10th September 2018; https://goo.gl/v1drZl)"
         },
         "activity_id":{
-            "LongRunMIP":"LongRunMIP"
+            "LongRunMIP":"LongRunMIP",
+            "GrandEnsemble":"GrandEnsemble"
         },
         "institution_id":{
             "MPI-M":"Max Planck Institute for Meteorology, Hamburg 20146, Germany"
         },
         "source_id":{
-            "MPI-ESM1-2-HR":{
-                "activity_participation":[
-                    "LongRunMIP"
-                ],
-                "cohort":[
-                    "Registered"
-                ],
-                "institution_id":[
-                    "MPI-M",
-                    "DWD",
-                    "DKRZ"
-                ],
-                "source_id":"MPI-ESM1-2-HR",
-                "source":"MPI-ESM1.2-HR (2017): \naerosol: none, prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T127; 384 x 192 longitude/latitude; 95 levels; top level 0.01 hPa)\natmosChem: none\nland: JSBACH3.20\nlandIce: none/prescribed\nocean: MPIOM1.63 (tripolar TP04, approximately 0.4deg; 802 x 404 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)"
-            },
             "MPI-ESM1-2-LR":{
                 "activity_participation":[
-                    "LongRunMIP"
+                    "LongRunMIP",
+                    "GrandEnsemble"
                 ],
                 "cohort":[
                     "Registered"
@@ -196,7 +183,7 @@
                     "CHEM",
                     "BGC"
                 ],
-                "experiment":"Abrupt forcing of 2xCO2",
+                "experiment":"abrupt2xCO2",
                 "experiment_id":"abrupt2xCO2",
                 "parent_activity_id":[
                     "LongRunMIP"
@@ -220,8 +207,80 @@
                     "CHEM",
                     "BGC"
                 ],
-                "experiment":"Abrupt forcing of 4xCO2",
+                "experiment":"abrupt4xCO2",
                 "experiment_id":"abrupt4xCO2",
+                "parent_activity_id":[
+                    "CMIP"
+                ],
+                "parent_experiment_id":[
+                    "no parent"
+                ],
+                "required_model_components":[
+                    "AOGCM"
+                ],
+                "sub_experiment_id":[
+                    "none"
+                ]
+            },
+            "abrupt8xCO2":{
+                "activity_id":[
+                    "LongRunMIP"
+                ],
+                "additional_allowed_model_components":[
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "experiment":"abrupt8xCO2",
+                "experiment_id":"abrupt8xCO2",
+                "parent_activity_id":[
+                    "CMIP"
+                ],
+                "parent_experiment_id":[
+                    "no parent"
+                ],
+                "required_model_components":[
+                    "AOGCM"
+                ],
+                "sub_experiment_id":[
+                    "none"
+                ]
+            },
+            "abrupt16xCO2":{
+                "activity_id":[
+                    "LongRunMIP"
+                ],
+                "additional_allowed_model_components":[
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "experiment":"abrupt16xCO2",
+                "experiment_id":"abrupt16xCO2",
+                "parent_activity_id":[
+                    "CMIP"
+                ],
+                "parent_experiment_id":[
+                    "no parent"
+                ],
+                "required_model_components":[
+                    "AOGCM"
+                ],
+                "sub_experiment_id":[
+                    "none"
+                ]
+            },
+            "historical":{
+                "activity_id":[
+                    "GrandEnsemble"
+                ],
+                "additional_allowed_model_components":[
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "experiment":"historical",
+                "experiment_id":"historical",
                 "parent_activity_id":[
                     "CMIP"
                 ],
