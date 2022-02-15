@@ -4568,6 +4568,24 @@
             "ok_min_mean_abs": "", 
             "ok_max_mean_abs": ""
         }, 
+        "rho": {
+            "frequency": "mon", 
+            "modeling_realm": "ocean", 
+            "standard_name": "sea_water_insitu_density", 
+            "units": "kg m-3", 
+            "cell_methods": "area: mean where sea time: mean", 
+            "cell_measures": "area: areacello volume: volcello", 
+            "long_name": "Sea Water Insitu Density", 
+            "comment": "Calculated via  cdo rhopoto adisit", 
+            "dimensions": "longitude latitude olevel time", 
+            "out_name": "rho", 
+            "type": "real", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": ""
+        },
         "thetaoga": {
             "frequency": "mon", 
             "modeling_realm": "ocean", 
