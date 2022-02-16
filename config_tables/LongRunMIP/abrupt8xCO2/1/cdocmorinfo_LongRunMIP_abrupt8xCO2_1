@@ -10,11 +10,11 @@ license="CMIP6 model data produced by MPI-M is licensed under a Creative Commons
 calendar="proleptic_gregorian"
 contact="cmip6-mpiesm1@dkrz.de"
 
-activity_id=GrandEnsemble
+activity_id=LongRunMIP
 
-experiment_id=historical
+experiment_id=abrupt8xCO2
 
-experiment=historical
+experiment=abrupt8xCO2
 
 parent_experiment_id="no parent"
 sub_experiment_id="none"
@@ -31,4 +31,3 @@ forcing_index=1
 initialization_index=1
 
 drs_root="/home/bjoern/Documents/Projects/CMOR/cmip6-cmor-tables/data"
-
