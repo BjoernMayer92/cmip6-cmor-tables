@@ -41,6 +41,7 @@ realization_index=${realization_id}
 physics_index=1
 forcing_index=1
 initialization_index=1
+version_date="v20220217"
 
 drs_root="${drs_root}"
 EOF
