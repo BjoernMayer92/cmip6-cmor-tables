@@ -1,0 +1,175 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Automatically created Variable-Mapping-Table for JSBACH
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Creation Date: 2020-11-14 11:15:52.951955 UTC
+! Data Request Version: 01.00.33
+! $URL$
+! $Rev$  $Date$
+! Blacklist (266 variables) has been applied!
+!----------------------------------------------------------------------------------------
+! This table contains information that has to be provided in order to use the CDO cmor operator.
+! E.g. if your data files are GRIB formatted, the code number of the variable which
+!   corresponds to the target variable indicated by the short (CMOR) name (cmor_name=)
+!   needs to be given (with keyword 'code').
+! The table format:
+!  Each line has to start with '&parameter '
+!  Comments start with an exclamation sign
+!  The order of keyword assignments does not matter
+!  There must be at least 1 space between assignments
+!  Any keyword value may be written with double-quotes
+!  If a keyword value contains spaces, it must be delimited by double-quotes
+! Keywords interpreted by cdo cmor,... are :
+!
+! Entry            	Type 	Description
+!----------------------------------------------------------------------------------------
+! name                 STRING  Name of the variable in a NetCDF model output file
+! code                 STRING  1 to 3-digit variable code (for GRIB files)
+! cmor_name            WORD    CMIP/CMOR name of the target variable
+!                              (this is not necessarily the output variable name!)
+! character_axis       STRING  Standard (CMOR) name of a character axis
+! param                STRING  GRIB parameter (GRIB1: code[.tabnum]; GRIB2: num[.cat[.dis]])
+! units                STRING  Units (UDUNITS!) of the variable
+! positive             WORD    'u' or 'd' for 'up' and 'down' flux direction
+! variable_comment     STRING  Information concerning the target variable that will be
+!                              transformed into a variable NetCDF attribute
+! cell_methods         WORD    Information about the time:cell_methods of the target variable
+! project_mip_table    WORD    MIP-table name of the target variable
+! z-axis               WORD    vertical axis name of the target variable
+!
+! OtherAdditional keywords are allowed; they will be ignored by the cmor operator.
+!
+!----------------------------------------------------------------------------------------
+&parameter cmor_name="lai"                          code="107" project_mip_table="Eday"         units="1"             cell_methods="m"  /
+&parameter cmor_name="tr"                           code="36"  project_mip_table="Eday"         units="K"             cell_methods="m"  /
+&parameter cmor_name="tran"                         code="76"  project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="tsl"                          code="68"  project_mip_table="Eday"         units="K"             cell_methods="m" z_axis="sdepth"      /
+&parameter cmor_name="fNdep"                        code="236" project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="snc"                          code="60"  project_mip_table="LImon"        units="1"             cell_methods="m"  /
+&parameter cmor_name="lai"                          code="107" project_mip_table="Lmon"         units="1"             cell_methods="m"  /
+&parameter cmor_name="tran"                         code="76"  project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="tsl"                          code="68"  project_mip_table="Lmon"         units="K"             cell_methods="m" z_axis="sdepth"      /
+&parameter cmor_name="snc"                          code="60"  project_mip_table="day"          units="1"             cell_methods="m"  /
+&parameter cmor_name="rootd"                        name="root_depth"                              project_mip_table="fx"           units="m"             cell_methods="n"  /
+&parameter cmor_name="sftgif"                       name="glac"                                    project_mip_table="fx"           units="1"             cell_methods="n"  /
+&parameter cmor_name="sftlf"                        name="slm"                                     project_mip_table="fx"           units="1"             cell_methods="n"  /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables incl character dimension !
+! listed in the following:                     !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="cSoilPools"                              project_mip_table="Emon"         units="kg m-2"        cell_methods="m" character_axis="soilpools" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cropFracC3"                                                                  project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec3crop"  /
+&parameter cmor_name="cropFracC4"                                                                  project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec4crop"  /
+&parameter cmor_name="fracLut"                                                                     project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="gppLut"                                                                      project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" character_axis="landUse"  variable_comment="This is potential GPP. It is calculated before the actual plant demand is determined. Autotrophic respiration (ra) is calculated from the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="grassFracC3"                                                                 project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec3natg" variable_comment="Grass fracture for natural grass only."  /
+&parameter cmor_name="grassFracC4"                                                                 project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec4natg" variable_comment="Grass fracture for natural grass only."  /
+&parameter cmor_name="laiLut"                                                                      project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="nppLut"                                                                      project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="nwdFracLut"                                                                  project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="pastureFracC3"                                                               project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec3pastures"  /
+&parameter cmor_name="pastureFracC4"                                                               project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typec4pastures"  /
+&parameter cmor_name="raLut"                                                                       project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" character_axis="landUse"  variable_comment="Autotrophic respiration (ra) is calculated as the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="rhLut"                                                                       project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="vegFrac"                                                                     project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="typeveg"  variable_comment="Grass fracture includes natural grass and pasture."  /
+&parameter cmor_name="baresoilFrac"                                                                project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typebare"  /
+&parameter cmor_name="cLitterLut"                                                                  project_mip_table="Eyr"          units="kg m-2"        cell_methods="p" character_axis="landUse"  variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cSoilLut"                                                                    project_mip_table="Eyr"          units="kg m-2"        cell_methods="p" character_axis="landUse"  variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cVegLut"                                                                     project_mip_table="Eyr"          units="kg m-2"        cell_methods="p" character_axis="landUse"   /
+&parameter cmor_name="cropFrac"                                                                    project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typecrop"  /
+&parameter cmor_name="fracInLut"                                                                   project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="fracLut"                                                                     project_mip_table="Eyr"          units="1"             cell_methods="p" character_axis="landUse"   /
+&parameter cmor_name="fracOutLut"                                                                  project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="landUse"   /
+&parameter cmor_name="grassFrac"                                                                   project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typenatgr" variable_comment="Grass fracture for natural grass only."  /
+&parameter cmor_name="residualFrac"                                                                project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typeresidual" variable_comment="In JSBACH residualFrac corresponds to the glacier fraction."  /
+&parameter cmor_name="shrubFrac"                                                                   project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typeshrub"  /
+&parameter cmor_name="treeFrac"                                                                    project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typetree"  /
+&parameter cmor_name="vegFrac"                                                                     project_mip_table="Eyr"          units="1"             cell_methods="m" character_axis="typeveg"  variable_comment="Grass fracture includes natural grass and pasture."  /
+&parameter cmor_name="baresoilFrac"                                                                project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typebare"  /
+&parameter cmor_name="c3PftFrac"                                                                   project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typec3pft"  /
+&parameter cmor_name="c4PftFrac"                                                                   project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typec4pft"  /
+&parameter cmor_name="cropFrac"                                                                    project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typecrop"  /
+&parameter cmor_name="grassFrac"                                                                   project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typenatgr" variable_comment="Grass fracture for natural grass only."  /
+&parameter cmor_name="landCoverFrac"                                                               project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="vegtype"   /
+&parameter cmor_name="pastureFrac"                                                                 project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typepasture"  /
+&parameter cmor_name="residualFrac"                                                                project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typeresidual" variable_comment="In JSBACH residualFrac corresponds to the glacier fraction."  /
+&parameter cmor_name="shrubFrac"                                                                   project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typeshrub"  /
+&parameter cmor_name="treeFrac"                                                                    project_mip_table="Lmon"         units="1"             cell_methods="m" character_axis="typetree"  /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables listed in the following: !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="mrsos"                                   project_mip_table="3hr"          units="kg m-2"        cell_methods="p" z_axis="sdepth1"     /
+&parameter cmor_name="mrsol"                                   project_mip_table="6hrPlevPt"    units="kg m-2"        cell_methods="p" z_axis="sdepth"      /
+&parameter cmor_name="mrsos"                                   project_mip_table="6hrPlevPt"    units="kg m-2"        cell_methods="p" z_axis="sdepth1"     /
+&parameter cmor_name="tsl"                                     project_mip_table="6hrPlevPt"    units="K"             cell_methods="p" z_axis="sdepth1"    variable_comment="Soil temperature of uppermost model layer (up to 0.065 m depth)."  /
+&parameter cmor_name="cnc"                                     project_mip_table="Eday"         units="1"             cell_methods="m"  /
+&parameter cmor_name="es"                                      project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="mrsol"                                   project_mip_table="Eday"         units="kg m-2"        cell_methods="m" z_axis="sdepth"      /
+&parameter cmor_name="sbl"                                     project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="snwc"                                    project_mip_table="Eday"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cLand"                                   project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cLitterGrass"                            project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cLitterShrub"                            project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cLitterTree"                             project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cSoil"                                   project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cSoilGrass"                              project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cSoilShrub"                              project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cSoilTree"                               project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cVegGrass"                               project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cVegShrub"                               project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cVegTree"                                project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="fBNF"                                    project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fDeforestToProduct"                      project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fHarvestToProduct"                       project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fLuc"                                    project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" positive="u" variable_comment="This is the flux from the product pools to the atmosphere due to land use change. It differs from fDeforestToAtmos, which is the direct flux from living vegetation to the atmosphere. In jsbach, fDeforestToAtmos is zero in simulation with anthropogenic C pools."  /
+&parameter cmor_name="fN2O"                                    project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" positive="u"  /
+&parameter cmor_name="fNAnthDisturb"                           project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="In contrast to the carbon flux fAnthDisturb, the corresponding N flux is non-zero, because nitrogen reaches the atmosphere directly while carbon only via product pools. An exception is N from crop harvest."  /
+&parameter cmor_name="fNProduct"                               project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNgas"                                   project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNgasFire"                               project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNgasNonFire"                            project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNleach"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNloss"                                  project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNnetmin"                                project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fNup"                                    project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fProductDecomp"                          project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="gppGrass"                                project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="This is potential GPP. It is calculated before the actual plant demand is determined. Autotrophic respiration (ra) is calculated from the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="gppShrub"                                project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="This is potential GPP. It is calculated before the actual plant demand is determined. Autotrophic respiration (ra) is calculated from the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="gppTree"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="This is potential GPP. It is calculated before the actual plant demand is determined. Autotrophic respiration (ra) is calculated from the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="mrsol"                                   project_mip_table="Emon"         units="kg m-2"        cell_methods="m" z_axis="sdepth"      /
+&parameter cmor_name="nLand"                                   project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="nLitter"                                 project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="Only the above ground litter pools are considered here; below ground litter nitrogen is counted as soil nitrogen."  /
+&parameter cmor_name="nMineral"                                project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="nProduct"                                project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="nSoil"                                   project_mip_table="Emon"         units="kg m-2"        cell_methods="m" variable_comment="computed using nLand = nVeg + nLitter + nSoil + nProduct + nMineral"  /
+&parameter cmor_name="nVeg"                                    project_mip_table="Emon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="nep"                                     project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="nppGrass"                                project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="nppShrub"                                project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="nppTree"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="raGrass"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="Autotrophic respiration (ra) is calculated as the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="raShrub"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="Autotrophic respiration (ra) is calculated as the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="raTree"                                  project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="Autotrophic respiration (ra) is calculated as the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="rhGrass"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rhShrub"                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rhSoil"                                  project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rhTree"                                  project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="cLitter"                                 project_mip_table="Eyr"          units="kg m-2"        cell_methods="p" variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cProduct"                                project_mip_table="Eyr"          units="kg m-2"        cell_methods="p"  /
+&parameter cmor_name="cSoil"                                   project_mip_table="Eyr"          units="kg m-2"        cell_methods="p" variable_comment="Carbon from the yasso below ground litter pools and from the humus pools are counted as soil carbon."  /
+&parameter cmor_name="cVeg"                                    project_mip_table="Eyr"          units="kg m-2"        cell_methods="p"  /
+&parameter cmor_name="cLitter"                                 project_mip_table="Lmon"         units="kg m-2"        cell_methods="m" variable_comment="Only the yasso above ground litter pools are considered here, as carbon from below ground litter pools is counted as soil carbon. Thus a further subdivision into cLitterAbove and cLitterBelow is not possible."  /
+&parameter cmor_name="cProduct"                                project_mip_table="Lmon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cVeg"                                    project_mip_table="Lmon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="fFire"                                   project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="u"  /
+&parameter cmor_name="fGrazing"                                project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="u"  /
+&parameter cmor_name="fHarvest"                                project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="u" variable_comment="This is the flux from the product pools to the atmosphere due to crop and wood harvest. It differs from fHarvestToAtmos, which is the harvest flux going directly to the atmosphere. fHarvestToAtmos is zero for jsbach, as C from harvest goes to the product pools and later decomposes."  /
+&parameter cmor_name="gpp"                                     project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" variable_comment="This is potential GPP. It is calculated before the actual plant demand is determined. Autotrophic respiration (ra) is calculated from the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="mrso"                                    project_mip_table="Lmon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="mrsos"                                   project_mip_table="Lmon"         units="kg m-2"        cell_methods="m" z_axis="sdepth1"     /
+&parameter cmor_name="nbp"                                     project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="npp"                                     project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="ra"                                      project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="u" variable_comment="Autotrophic respiration (ra) is calculated as the difference of (potential) GPP and actual NPP."  /
+&parameter cmor_name="rh"                                      project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m" positive="u"  /
+&parameter cmor_name="mrso"                                    project_mip_table="day"          units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="mrsos"                                   project_mip_table="day"          units="kg m-2"        cell_methods="m" z_axis="sdepth1"     /
+&parameter cmor_name="mrsofc"                                  project_mip_table="fx"           units="kg m-2"        cell_methods="n"  /

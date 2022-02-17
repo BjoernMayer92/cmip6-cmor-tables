@@ -1,0 +1,171 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Automatically created Variable-Mapping-Table for HAMOCC
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Creation Date: 2020-12-16 15:17:37.996036 UTC
+! Data Request Version: 01.00.33
+! $URL$
+! $Rev$  $Date$
+! Blacklist (266 variables) has been applied!
+!----------------------------------------------------------------------------------------
+! This table contains information that has to be provided in order to use the CDO cmor operator.
+! E.g. if your data files are GRIB formatted, the code number of the variable which
+!   corresponds to the target variable indicated by the short (CMOR) name (cmor_name=)
+!   needs to be given (with keyword 'code').
+! The table format:
+!  Each line has to start with '&parameter '
+!  Comments start with an exclamation sign
+!  The order of keyword assignments does not matter
+!  There must be at least 1 space between assignments
+!  Any keyword value may be written with double-quotes
+!  If a keyword value contains spaces, it must be delimited by double-quotes
+! Keywords interpreted by cdo cmor,... are :
+!
+! Entry            	Type 	Description
+!----------------------------------------------------------------------------------------
+! name                 STRING  Name of the variable in a NetCDF model output file
+! code                 STRING  1 to 3-digit variable code (for GRIB files)
+! cmor_name            WORD    CMIP/CMOR name of the target variable
+!                              (this is not necessarily the output variable name!)
+! character_axis       STRING  Standard (CMOR) name of a character axis
+! param                STRING  GRIB parameter (GRIB1: code[.tabnum]; GRIB2: num[.cat[.dis]])
+! units                STRING  Units (UDUNITS!) of the variable
+! positive             WORD    'u' or 'd' for 'up' and 'down' flux direction
+! variable_comment     STRING  Information concerning the target variable that will be
+!                              transformed into a variable NetCDF attribute
+! cell_methods         WORD    Information about the time:cell_methods of the target variable
+! project_mip_table    WORD    MIP-table name of the target variable
+! z-axis               WORD    vertical axis name of the target variable
+!
+! OtherAdditional keywords are allowed; they will be ignored by the cmor operator.
+!
+!----------------------------------------------------------------------------------------
+&parameter cmor_name="expcalc"                                                                     project_mip_table="Emon"         units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="expsi"                                                                       project_mip_table="Emon"         units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="ppdiaz"                       name="phosy_cya"                               project_mip_table="Emon"         units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="ppmisc"                       name="phosy"                                   project_mip_table="Emon"         units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chlos"                                                                       project_mip_table="Oday"         units="kg m-3"        cell_methods="m"  /
+&parameter cmor_name="phycos"                                                                      project_mip_table="Oday"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="bsi"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bsios"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="calc"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chl"                                                                         project_mip_table="Omon"         units="kg m-3"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chldiaz"                                                                     project_mip_table="Omon"         units="kg m-3"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chlos"                                                                       project_mip_table="Omon"         units="kg m-3"        cell_methods="m"  /
+&parameter cmor_name="co3"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="co3os"                        name="co3"                                     project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="co3satcalc"                                                                  project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="detoc"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dfe"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dfeos"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="dissic"                                                                      project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dissicos"                                                                    project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="dissoc"                                                                      project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dissocos"                                                                    project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="dpco2"                                                                       project_mip_table="Omon"         units="Pa"            cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="dpo2"                                                                        project_mip_table="Omon"         units="Pa"            cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="epc100"                                                                      project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth100m"   /
+&parameter cmor_name="epcalc100"                                                                   project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth100m"   /
+&parameter cmor_name="epsi100"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth100m"   /
+&parameter cmor_name="expc"                                                                        project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="fbddtalk"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fbddtdic"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fbddtdife"                                                                   project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fbddtdin"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fbddtdip"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fbddtdisi"                                                                   project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtalk"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtdic"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtdife"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtdin"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtdip"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fddtdisi"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="olayer100m"  /
+&parameter cmor_name="fgco2"                                                                       project_mip_table="Omon"         units="kg m-2 s-1"    cell_methods="m" positive="d" z_axis="depth0m"     /
+&parameter cmor_name="fgo2"                                                                        project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="depth0m"     /
+&parameter cmor_name="fric"                                                                        project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="frn"                                                                         project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="froc"                                                                        project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="fsfe"                                                                        project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="fsn"                                                                         project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="graz"                                                                        project_mip_table="Omon"         units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="icfriver"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="intdic"                                                                      project_mip_table="Omon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="intdoc"                                                                      project_mip_table="Omon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="intpbfe"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpbn"                                                                      project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpbp"                                                                      project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpbsi"                                                                     project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpcalcite"                                                                 project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpn2"                                                                      project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intpoc"                                                                      project_mip_table="Omon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="intpp"                                                                       project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="intppdiaz"                    name="intpdiaz"                                project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="no3"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="no3os"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="o2"                                                                          project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="o2min"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="o2os"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="o2satos"                                                                     project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="ocfriver"                                                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="ph"                                                                          project_mip_table="Omon"         units="1.0"           cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyc"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phycos"                                                                      project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="phydiaz"                                                                     project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyfe"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phymisc"                                                                     project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyn"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyp"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="po4"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pon"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="ponos"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="pop"                                                                         project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="popos"                                                                       project_mip_table="Omon"         units="mol m-3"       cell_methods="m"  /
+&parameter cmor_name="pp"                                                                          project_mip_table="Omon"         units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="si"                                                                          project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="spco2"                                                                       project_mip_table="Omon"         units="Pa"            cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="talk"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="zo2min"                                                                      project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="zooc"                                                                        project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="zsatcalc"                                                                    project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="bddtalk"                                                                     project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bddtdic"                                                                     project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bddtdife"                                                                    project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bddtdin"                                                                     project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bddtdip"                                                                     project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bddtdisi"                                                                    project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="bsi"                                                                         project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chl"                                                                         project_mip_table="Oyr"          units="kg m-3"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chldiaz"                                                                     project_mip_table="Oyr"          units="kg m-3"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dcalc"                                                                       project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="dfe"                                                                         project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="expc"                                                                        project_mip_table="Oyr"          units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="expcalc"                                                                     project_mip_table="Oyr"          units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="expsi"                                                                       project_mip_table="Oyr"          units="mol m-2 s-1"   cell_methods="m" positive="d" z_axis="olevel"      /
+&parameter cmor_name="fgco2"                                                                       project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="graz"                                                                        project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="no3"                                                                         project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="o2"                                                                          project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pbfe"                                                                        project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pbsi"                                                                        project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pcalc"                                                                       project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyc"                                                                        project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyfe"                                                                       project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyn"                                                                        project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="phyp"                                                                        project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pon"                                                                         project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pop"                                                                         project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pp"                                                                          project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="ppdiaz"                       name="phosy_cya"                               project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="ppmisc"                       name="phosy"                                   project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="remoc"                                                                       project_mip_table="Oyr"          units="mol m-3 s-1"   cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="si"                                                                          project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables listed in the following: !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="bfe"                                     project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="chldiazos"                               project_mip_table="Omon"         units="kg m-3"        cell_methods="m"  /
+&parameter cmor_name="frfe"                                    project_mip_table="Omon"         units="mol m-2 s-1"   cell_methods="m"  /
+&parameter cmor_name="limfediaz"                               project_mip_table="Omon"         units="1"             cell_methods="m"  /
+&parameter cmor_name="o2sat"                                   project_mip_table="Omon"         units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="ppos"                                    project_mip_table="Omon"         units="mol m-3 s-1"   cell_methods="m" z_axis="depth0m"     /
+&parameter cmor_name="bfe"                                     project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="o2sat"                                   project_mip_table="Oyr"          units="mol m-3"       cell_methods="m" z_axis="olevel"      /

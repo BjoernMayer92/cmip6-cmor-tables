@@ -1,0 +1,221 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Automatically created Variable-Mapping-Table for MPIOM
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Creation Date: 2021-01-26 18:39:31.703202 UTC
+! Data Request Version: 01.00.33
+! $URL$
+! $Rev$  $Date$
+! Blacklist (266 variables) has been applied!
+!----------------------------------------------------------------------------------------
+! This table contains information that has to be provided in order to use the CDO cmor operator.
+! E.g. if your data files are GRIB formatted, the code number of the variable which
+!   corresponds to the target variable indicated by the short (CMOR) name (cmor_name=)
+!   needs to be given (with keyword 'code').
+! The table format:
+!  Each line has to start with '&parameter '
+!  Comments start with an exclamation sign
+!  The order of keyword assignments does not matter
+!  There must be at least 1 space between assignments
+!  Any keyword value may be written with double-quotes
+!  If a keyword value contains spaces, it must be delimited by double-quotes
+! Keywords interpreted by cdo cmor,... are :
+!
+! Entry            	Type 	Description
+!----------------------------------------------------------------------------------------
+! name                 STRING  Name of the variable in a NetCDF model output file
+! code                 STRING  1 to 3-digit variable code (for GRIB files)
+! cmor_name            WORD    CMIP/CMOR name of the target variable
+!                              (this is not necessarily the output variable name!)
+! character_axis       STRING  Standard (CMOR) name of a character axis
+! param                STRING  GRIB parameter (GRIB1: code[.tabnum]; GRIB2: num[.cat[.dis]])
+! units                STRING  Units (UDUNITS!) of the variable
+! positive             WORD    'u' or 'd' for 'up' and 'down' flux direction
+! variable_comment     STRING  Information concerning the target variable that will be
+!                              transformed into a variable NetCDF attribute
+! cell_methods         WORD    Information about the time:cell_methods of the target variable
+! project_mip_table    WORD    MIP-table name of the target variable
+! z-axis               WORD    vertical axis name of the target variable
+!
+! OtherAdditional keywords are allowed; they will be ignored by the cmor operator.
+!
+!----------------------------------------------------------------------------------------
+&parameter cmor_name="tos"                                                                         project_mip_table="3hr"          units="degC"          cell_methods="p"  /
+&parameter cmor_name="mlotst"                                                                      project_mip_table="Eday"         units="m"             cell_methods="m"  /
+&parameter cmor_name="t20d"                                                                        project_mip_table="Eday"         units="m"             cell_methods="m"  /
+&parameter cmor_name="opottempdiff"                                                                project_mip_table="Emon"         units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottempmint"                                                                project_mip_table="Emon"         units="degC kg m-2"   cell_methods="m"  /
+&parameter cmor_name="opottemppadvect"                                                             project_mip_table="Emon"         units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottemppmdiff"                                                              project_mip_table="Emon"         units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottemptend"                                                                project_mip_table="Emon"         units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltdiff"                                                                   project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltpadvect"                 name="osaltpmadvect"                           project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltpmdiff"                                                                 project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osalttend"                                                                   project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="pathetao"                     name="added_heat"                              project_mip_table="Emon"         units="degC"          cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="prthetao"                     name="redist_heat"                             project_mip_table="Emon"         units="degC"          cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="rsdoabsorb"                                                                  project_mip_table="Emon"         units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="somint"                                                                      project_mip_table="Emon"         units="g m-2"         cell_methods="m"  /
+&parameter cmor_name="t20d"                                                                        project_mip_table="Emon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="thetaot"                                                                     project_mip_table="Emon"         units="K"             cell_methods="m"  /
+&parameter cmor_name="thetaot2000"                                                                 project_mip_table="Emon"         units="K"             cell_methods="m" z_axis="depth2000m"  /
+&parameter cmor_name="thetaot300"                                                                  project_mip_table="Emon"         units="K"             cell_methods="m" z_axis="depth300m"   /
+&parameter cmor_name="thetaot700"                                                                  project_mip_table="Emon"         units="K"             cell_methods="m" z_axis="depth700m"   /
+&parameter cmor_name="sltbasin"                     name="global_sltbasin,atlantic_sltbasin,indopacific_sltbasin"            project_mip_table="EmonZ"        units="kg s-1"        cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="difvho"                                                                      project_mip_table="Oclim"        units="m2 s-1"        cell_methods="c" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="difvmo"                       name="avo"                                     project_mip_table="Oclim"        units="m2 s-1"        cell_methods="c" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="difvso"                       name="difvho"                                  project_mip_table="Oclim"        units="m2 s-1"        cell_methods="c" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="omldamax"                     name="mlotst"                                  project_mip_table="Oday"         units="m"             cell_methods="m"  /
+&parameter cmor_name="sos"                                                                         project_mip_table="Oday"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sossq"                                                                       project_mip_table="Oday"         units="1e-06"         cell_methods="m"  /
+&parameter cmor_name="tos"                                                                         project_mip_table="Oday"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="tossq"                                                                       project_mip_table="Oday"         units="degC2"         cell_methods="m"  /
+&parameter cmor_name="agessc"                                                                      project_mip_table="Odec"         units="yr"            cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="hfbasin"                      name="global_hfbasin,atlantic_hfbasin,indopacific_hfbasin"            project_mip_table="Odec"         units="W"             cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="hfds"                                                                        project_mip_table="Odec"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="masso"                                                                       project_mip_table="Odec"         units="kg"            cell_methods="m"  /
+&parameter cmor_name="msftmz"                       name="global_moc,atlantic_moc,indopacific_moc"            project_mip_table="Odec"         units="kg s-1"        cell_methods="m" character_axis="basin"    z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="sfdsi"                                                                       project_mip_table="Odec"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="so"                                                                          project_mip_table="Odec"         units="0.001"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="soga"                                                                        project_mip_table="Odec"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sos"                                                                         project_mip_table="Odec"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sosga"                                                                       project_mip_table="Odec"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="tauvo"                                                                       project_mip_table="Odec"         units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="thetao"                                                                      project_mip_table="Odec"         units="degC"          cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="thetaoga"                                                                    project_mip_table="Odec"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="thkcello"                                                                    project_mip_table="Odec"         units="m"             cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="tos"                                                                         project_mip_table="Odec"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="tosga"                                                                       project_mip_table="Odec"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="vo"                                                                          project_mip_table="Odec"         units="m s-1"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="volo"                                                                        project_mip_table="Odec"         units="m3"            cell_methods="m"  /
+&parameter cmor_name="wfo"                                                                         project_mip_table="Odec"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="wo"                                                                          project_mip_table="Odec"         units="m s-1"         cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="areacello"                                                                   project_mip_table="Ofx"          units="m2"            cell_methods="n"  /
+&parameter cmor_name="basin"                                                                       project_mip_table="Ofx"          units="1"             cell_methods="n"  /
+&parameter cmor_name="deptho"                                                                      project_mip_table="Ofx"          units="m"             cell_methods="n"  /
+&parameter cmor_name="thkcello"                                                                    project_mip_table="Ofx"          units="m"             cell_methods="n" z_axis="olevel"      /
+&parameter cmor_name="agessc"                                                                      project_mip_table="Omon"         units="yr"            cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="cfc11"                                                                       project_mip_table="Omon"         units="kmol m-3"      cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="cfc12"                                                                       project_mip_table="Omon"         units="kmol m-3"      cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="fsitherm"                                                                    project_mip_table="Omon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="hfbasin"                      name="global_hfbasin,atlantic_hfbasin,indopacific_hfbasin"            project_mip_table="Omon"         units="W"             cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="hfbasinpadv"                  name="global_hfbasinpmadv,atlantic_hfbasinpmadv,indopacific_hfbasinpmadv"            project_mip_table="Omon"         units="W"             cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="hfbasinpmadv"                 name="global_hfbasinpmadv,atlantic_hfbasinpmadv,indopacific_hfbasinpmadv"            project_mip_table="Omon"         units="W"             cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="hfbasinpmdiff"                name="global_hfbasinpmdiff,atlantic_hfbasinpmdiff,indopacific_hfbasinpmdiff"            project_mip_table="Omon"         units="W"             cell_methods="m" character_axis="basin"     /
+&parameter cmor_name="hfds"                                                                        project_mip_table="Omon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="masso"                                                                       project_mip_table="Omon"         units="kg"            cell_methods="m"  /
+&parameter cmor_name="mfo"                          name="netwatertransport_barents_opening,netwatertransport_bering_strait,netwatertransport_canadian_archipelago,netwatertransport_denmark_strait,netwatertransport_drake_passage,netwatertransport_english_channel,netwatertransport_equatorial_undercurrent,netwatertransport_faroe_scotland_channel,netwatertransport_florida_bahamas,netwatertransport_fram_strait,netwatertransport_iceland_faroe_channel,netwatertransport_indonesian_throughflow,netwatertransport_mozambiqe_channel,netwatertransport_taiwan_and_luzon_straits,netwatertransport_windward_passage"            project_mip_table="Omon"         units="kg s-1"        cell_methods="m" character_axis="oline"     /
+&parameter cmor_name="mlotst"                                                                      project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="mlotstmax"                    name="mlotst"                                  project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="mlotstmin"                    name="mlotst"                                  project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="mlotstsq"                                                                    project_mip_table="Omon"         units="m2"            cell_methods="m"  /
+&parameter cmor_name="msftbarot"                                                                   project_mip_table="Omon"         units="kg s-1"        cell_methods="m"  /
+&parameter cmor_name="msftmz"                       name="global_moc,atlantic_moc,indopacific_moc"            project_mip_table="Omon"         units="kg s-1"        cell_methods="m" character_axis="basin"    z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="msftmzmpa"                    name="global_gm_moc,atlantic_gm_moc,indopacific_gm_moc"            project_mip_table="Omon"         units="kg s-1"        cell_methods="m" character_axis="basin"    z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="obvfsq"                                                                      project_mip_table="Omon"         units="s-2"           cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="pbo"                                                                         project_mip_table="Omon"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rsntds"                                                                      project_mip_table="Omon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sfdsi"                                                                       project_mip_table="Omon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="so"                                                                          project_mip_table="Omon"         units="0.001"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="sob"                                                                         project_mip_table="Omon"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="soga"                                                                        project_mip_table="Omon"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sos"                                                                         project_mip_table="Omon"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sosga"                                                                       project_mip_table="Omon"         units="0.001"         cell_methods="m"  /
+&parameter cmor_name="sossq"                                                                       project_mip_table="Omon"         units="1e-06"         cell_methods="m"  /
+&parameter cmor_name="tauvo"                                                                       project_mip_table="Omon"         units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="thetao"                                                                      project_mip_table="Omon"         units="degC"          cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="thetaoga"                                                                    project_mip_table="Omon"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="thkcello"                                                                    project_mip_table="Omon"         units="m"             cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="tob"                                                                         project_mip_table="Omon"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="tos"                                                                         project_mip_table="Omon"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="tosga"                                                                       project_mip_table="Omon"         units="degC"          cell_methods="m"  /
+&parameter cmor_name="tossq"                                                                       project_mip_table="Omon"         units="degC2"         cell_methods="m"  /
+&parameter cmor_name="vmo"                                                                         project_mip_table="Omon"         units="kg s-1"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="vo"                                                                          project_mip_table="Omon"         units="m s-1"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="volo"                                                                        project_mip_table="Omon"         units="m3"            cell_methods="m"  /
+&parameter cmor_name="wfo"                                                                         project_mip_table="Omon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="wfonocorr"                                                                   project_mip_table="Omon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="wmo"                                                                         project_mip_table="Omon"         units="kg s-1"        cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="wo"                                                                          project_mip_table="Omon"         units="m s-1"         cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="zos"                                                                         project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="zossq"                                                                       project_mip_table="Omon"         units="m2"            cell_methods="m"  /
+&parameter cmor_name="zostoga"                                                                     project_mip_table="Omon"         units="m"             cell_methods="m"  /
+&parameter cmor_name="cfc11"                                                                       project_mip_table="Oyr"          units="kmol m-3"      cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="cfc12"                                                                       project_mip_table="Oyr"          units="kmol m-3"      cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="difvho"                                                                      project_mip_table="Oyr"          units="m2 s-1"        cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="difvso"                       name="difvho"                                  project_mip_table="Oyr"          units="m2 s-1"        cell_methods="m" z_axis="olevel"     variable_comment="Reported on ocean half-levels."  /
+&parameter cmor_name="opottempdiff"                                                                project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottempmint"                                                                project_mip_table="Oyr"          units="degC kg m-2"   cell_methods="m"  /
+&parameter cmor_name="opottemppadvect"                                                             project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottemppmdiff"                                                              project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottemptend"                                                                project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltdiff"                                                                   project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltpadvect"                 name="osaltpmadvect"                           project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltpmdiff"                                                                 project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osalttend"                                                                   project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="rsdoabsorb"                                                                  project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="somint"                                                                      project_mip_table="Oyr"          units="1e-3 kg m-2"   cell_methods="m"  /
+&parameter cmor_name="siconc"                                                                      project_mip_table="SIday"        units="1"             cell_methods="m" character_axis="typesi"    /
+&parameter cmor_name="sitimefrac"                                                                  project_mip_table="SIday"        units="1"             cell_methods="m"  /
+&parameter cmor_name="siareaacrossline"             name="siareaacrossline_barents_opening,siareaacrossline_bering_strait,siareaacrossline_canadian_archipelago,siareaacrossline_fram_strait"            project_mip_table="SImon"        units="m2 s-1"        cell_methods="m" character_axis="siline"    /
+&parameter cmor_name="siarean"                                                                     project_mip_table="SImon"        units="m2"            cell_methods="m"  /
+&parameter cmor_name="siareas"                                                                     project_mip_table="SImon"        units="m2"            cell_methods="m"  /
+&parameter cmor_name="siconc"                                                                      project_mip_table="SImon"        units="1"             cell_methods="m" character_axis="typesi"    /
+&parameter cmor_name="sidconcdyn"                                                                  project_mip_table="SImon"        units="s-1"           cell_methods="m"  /
+&parameter cmor_name="sidconcth"                                                                   project_mip_table="SImon"        units="s-1"           cell_methods="m"  /
+&parameter cmor_name="sidmassdyn"                                                                  project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sidmassth"                                                                   project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sidmasstranx"                                                                project_mip_table="SImon"        units="kg s-1"        cell_methods="m"  /
+&parameter cmor_name="sidmasstrany"                                                                project_mip_table="SImon"        units="kg s-1"        cell_methods="m"  /
+&parameter cmor_name="siextentn"                                                                   project_mip_table="SImon"        units="m2"            cell_methods="m"  /
+&parameter cmor_name="siextents"                                                                   project_mip_table="SImon"        units="m2"            cell_methods="m"  /
+&parameter cmor_name="sihc"                                                                        project_mip_table="SImon"        units="J m-2"         cell_methods="m"  /
+&parameter cmor_name="simass"                                                                      project_mip_table="SImon"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="simassacrossline"             name="simassacrossline_barents_opening,simassacrossline_bering_strait,simassacrossline_canadian_archipelago,simassacrossline_fram_strait"            project_mip_table="SImon"        units="kg s-1"        cell_methods="m" character_axis="siline"    /
+&parameter cmor_name="sisaltmass"                                                                  project_mip_table="SImon"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="sisnconc"                                                                    project_mip_table="SImon"        units="1"             cell_methods="m"  /
+&parameter cmor_name="sisnhc"                                                                      project_mip_table="SImon"        units="J m-2"         cell_methods="m"  /
+&parameter cmor_name="sisnmass"                                                                    project_mip_table="SImon"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="sitimefrac"                                                                  project_mip_table="SImon"        units="1"             cell_methods="m"  /
+&parameter cmor_name="sivol"                                                                       project_mip_table="SImon"        units="m"             cell_methods="m"  /
+&parameter cmor_name="sivoln"                                                                      project_mip_table="SImon"        units="1e3 km3"       cell_methods="m"  /
+&parameter cmor_name="sivols"                                                                      project_mip_table="SImon"        units="1e3 km3"       cell_methods="m"  /
+&parameter cmor_name="sndmassdyn"                                                                  project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sndmasssnf"                                                                  project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="snmassacrossline"             name="snmassacrossline_barents_opening,snmassacrossline_bering_strait,snmassacrossline_canadian_archipelago,snmassacrossline_fram_strait"            project_mip_table="SImon"        units="kg s-1"        cell_methods="m" character_axis="siline"    /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables listed in the following: !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="osaltrmadvect"                           project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="tauuo"                                   project_mip_table="Odec"         units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="uo"                                      project_mip_table="Odec"         units="m s-1"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="masscello"                               project_mip_table="Ofx"          units="kg m-2"        cell_methods="n" z_axis="olevel"      /
+&parameter cmor_name="sftof"                                   project_mip_table="Ofx"          units="1"             cell_methods="n"  /
+&parameter cmor_name="volcello"                                project_mip_table="Ofx"          units="m3"            cell_methods="n" z_axis="olevel"      /
+&parameter cmor_name="hfx"                                     project_mip_table="Omon"         units="W"             cell_methods="m"  /
+&parameter cmor_name="hfy"                                     project_mip_table="Omon"         units="W"             cell_methods="m"  /
+&parameter cmor_name="masscello"                               project_mip_table="Omon"         units="kg m-2"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="tauuo"                                   project_mip_table="Omon"         units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="umo"                                     project_mip_table="Omon"         units="kg s-1"        cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="uo"                                      project_mip_table="Omon"         units="m s-1"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="volcello"                                project_mip_table="Omon"         units="m3"            cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="opottemprmadvect"                        project_mip_table="Oyr"          units="W m-2"         cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="osaltrmadvect"                           project_mip_table="Oyr"          units="kg m-2 s-1"    cell_methods="m" z_axis="olevel"      /
+&parameter cmor_name="sisnthick"                               project_mip_table="SIday"        units="m"             cell_methods="m"  /
+&parameter cmor_name="sispeed"                                 project_mip_table="SIday"        units="m s-1"         cell_methods="m"  /
+&parameter cmor_name="sithick"                                 project_mip_table="SIday"        units="m"             cell_methods="m"  /
+&parameter cmor_name="siu"                                     project_mip_table="SIday"        units="m s-1"         cell_methods="m"  /
+&parameter cmor_name="siv"                                     project_mip_table="SIday"        units="m s-1"         cell_methods="m"  /
+&parameter cmor_name="sfdsi"                                   project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="sifb"                                    project_mip_table="SImon"        units="m"             cell_methods="m"  /
+&parameter cmor_name="siflcondbot"                             project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="siflcondtop"                             project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="siflfwbot"                               project_mip_table="SImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sisnthick"                               project_mip_table="SImon"        units="m"             cell_methods="m"  /
+&parameter cmor_name="sispeed"                                 project_mip_table="SImon"        units="m s-1"         cell_methods="m"  /
+&parameter cmor_name="sistrxdtop"                              project_mip_table="SImon"        units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sistrxubot"                              project_mip_table="SImon"        units="N m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="sistrydtop"                              project_mip_table="SImon"        units="N m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sistryubot"                              project_mip_table="SImon"        units="N m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="sithick"                                 project_mip_table="SImon"        units="m"             cell_methods="m"  /
+&parameter cmor_name="siu"                                     project_mip_table="SImon"        units="m s-1"         cell_methods="m"  /
+&parameter cmor_name="siv"                                     project_mip_table="SImon"        units="m s-1"         cell_methods="m"  /

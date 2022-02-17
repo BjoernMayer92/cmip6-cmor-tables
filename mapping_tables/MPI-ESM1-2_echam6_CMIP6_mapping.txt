@@ -1,0 +1,427 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Automatically created Variable-Mapping-Table for ECHAM6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Creation Date: 2020-12-16 15:17:37.813820 UTC
+! Data Request Version: 01.00.33
+! $URL$
+! $Rev$  $Date$
+! Blacklist (266 variables) has been applied!
+!----------------------------------------------------------------------------------------
+! This table contains information that has to be provided in order to use the CDO cmor operator.
+! E.g. if your data files are GRIB formatted, the code number of the variable which
+!   corresponds to the target variable indicated by the short (CMOR) name (cmor_name=)
+!   needs to be given (with keyword 'code').
+! The table format:
+!  Each line has to start with '&parameter '
+!  Comments start with an exclamation sign
+!  The order of keyword assignments does not matter
+!  There must be at least 1 space between assignments
+!  Any keyword value may be written with double-quotes
+!  If a keyword value contains spaces, it must be delimited by double-quotes
+! Keywords interpreted by cdo cmor,... are :
+!
+! Entry            	Type 	Description
+!----------------------------------------------------------------------------------------
+! name                 STRING  Name of the variable in a NetCDF model output file
+! code                 STRING  1 to 3-digit variable code (for GRIB files)
+! cmor_name            WORD    CMIP/CMOR name of the target variable
+!                              (this is not necessarily the output variable name!)
+! character_axis       STRING  Standard (CMOR) name of a character axis
+! param                STRING  GRIB parameter (GRIB1: code[.tabnum]; GRIB2: num[.cat[.dis]])
+! units                STRING  Units (UDUNITS!) of the variable
+! positive             WORD    'u' or 'd' for 'up' and 'down' flux direction
+! variable_comment     STRING  Information concerning the target variable that will be
+!                              transformed into a variable NetCDF attribute
+! cell_methods         WORD    Information about the time:cell_methods of the target variable
+! project_mip_table    WORD    MIP-table name of the target variable
+! z-axis               WORD    vertical axis name of the target variable
+!
+! OtherAdditional keywords are allowed; they will be ignored by the cmor operator.
+!
+!----------------------------------------------------------------------------------------
+&parameter cmor_name="clt"                          code="164" project_mip_table="3hr"          units="1"             cell_methods="m"  /
+&parameter cmor_name="hfls"                         code="147" project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hfss"                         code="146" project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="huss"                         code="54"  project_mip_table="3hr"          units="1"             cell_methods="p" z_axis="height2m"    /
+&parameter cmor_name="mrro"                         code="160" project_mip_table="3hr"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prc"                          code="143" project_mip_table="3hr"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prsn"                         code="144" project_mip_table="3hr"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="ps"                           code="134" project_mip_table="3hr"          units="Pa"            cell_methods="p"  /
+&parameter cmor_name="rlus"                         code="205" project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdscs"                       code="50"  project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsus"                         code="204" project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsuscs"                       code="51"  project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="tas"                          code="167" project_mip_table="3hr"          units="K"             cell_methods="p" z_axis="height2m"    /
+&parameter cmor_name="uas"                          code="165" project_mip_table="3hr"          units="m s-1"         cell_methods="p" z_axis="height10m"   /
+&parameter cmor_name="vas"                          code="166" project_mip_table="3hr"          units="m s-1"         cell_methods="p" z_axis="height10m"   /
+&parameter cmor_name="hus"                          code="133" project_mip_table="6hrLev"       units="1"             cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="ps"                           code="134" project_mip_table="6hrLev"       units="Pa"            cell_methods="p"  /
+&parameter cmor_name="ta"                           code="130" project_mip_table="6hrLev"       units="K"             cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="ua"                           code="131" project_mip_table="6hrLev"       units="m s-1"         cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="6hrLev"       units="m s-1"         cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="hurs"                         code="55"  project_mip_table="6hrPlev"      units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="hus4"                         code="133" project_mip_table="6hrPlev"      units="1"             cell_methods="m" z_axis="plev4"       /
+&parameter cmor_name="psl"                          code="151" project_mip_table="6hrPlev"      units="Pa"            cell_methods="m"  /
+&parameter cmor_name="tas"                          code="167" project_mip_table="6hrPlev"      units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="uas"                          code="165" project_mip_table="6hrPlev"      units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="vas"                          code="166" project_mip_table="6hrPlev"      units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="wap4"                         code="135" project_mip_table="6hrPlev"      units="Pa s-1"        cell_methods="m" z_axis="plev4"       /
+&parameter cmor_name="hus27"                        code="133" project_mip_table="6hrPlevPt"    units="1"             cell_methods="p" z_axis="plev27"      /
+&parameter cmor_name="hus7h"                        code="133" project_mip_table="6hrPlevPt"    units="1"             cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="huss"                         code="54"  project_mip_table="6hrPlevPt"    units="1"             cell_methods="p" z_axis="height2m"    /
+&parameter cmor_name="lwsffluxaero"                 code="34"  project_mip_table="6hrPlevPt"    units="W m-2"         cell_methods="p"  /
+&parameter cmor_name="lwtoafluxaerocs"              code="31"  project_mip_table="6hrPlevPt"    units="W m-2"         cell_methods="p"  /
+&parameter cmor_name="psl"                          code="151" project_mip_table="6hrPlevPt"    units="Pa"            cell_methods="p"  /
+&parameter cmor_name="sfcWind"                      code="171" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="height10m"   /
+&parameter cmor_name="swsffluxaero"                 code="24"  project_mip_table="6hrPlevPt"    units="W m-2"         cell_methods="p"  /
+&parameter cmor_name="swtoafluxaerocs"              code="21"  project_mip_table="6hrPlevPt"    units="W m-2"         cell_methods="p"  /
+&parameter cmor_name="ta"                           code="130" project_mip_table="6hrPlevPt"    units="K"             cell_methods="p" z_axis="plev3"       /
+&parameter cmor_name="ta27"                         code="130" project_mip_table="6hrPlevPt"    units="K"             cell_methods="p" z_axis="plev27"      /
+&parameter cmor_name="ta7h"                         code="130" project_mip_table="6hrPlevPt"    units="K"             cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="tas"                          code="167" project_mip_table="6hrPlevPt"    units="K"             cell_methods="p" z_axis="height2m"    /
+&parameter cmor_name="ts"                           code="169" project_mip_table="6hrPlevPt"    units="K"             cell_methods="p"  /
+&parameter cmor_name="ua"                           code="131" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="plev3"       /
+&parameter cmor_name="ua7h"                         code="131" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="uas"                          code="165" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="height10m"   /
+&parameter cmor_name="va"                           code="132" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="plev3"       /
+&parameter cmor_name="va7h"                         code="132" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="vas"                          code="166" project_mip_table="6hrPlevPt"    units="m s-1"         cell_methods="p" z_axis="height10m"   /
+&parameter cmor_name="zg27"                         code="156" project_mip_table="6hrPlevPt"    units="m"             cell_methods="p" z_axis="plev27"      /
+&parameter cmor_name="zg500"                        code="156" project_mip_table="6hrPlevPt"    units="m"             cell_methods="p" z_axis="p500"        /
+&parameter cmor_name="zg7h"                         code="156" project_mip_table="6hrPlevPt"    units="m"             cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="ua10"                         code="131" project_mip_table="AERday"       units="m s-1"         cell_methods="m" z_axis="p10"         /
+&parameter cmor_name="zg10"                         code="156" project_mip_table="AERday"       units="m"             cell_methods="m" z_axis="p10"         /
+&parameter cmor_name="zg100"                        code="156" project_mip_table="AERday"       units="m"             cell_methods="m" z_axis="p100"        /
+&parameter cmor_name="zg1000"                       code="156" project_mip_table="AERday"       units="m"             cell_methods="m" z_axis="p1000"       /
+&parameter cmor_name="zg500"                        code="156" project_mip_table="AERday"       units="m"             cell_methods="m" z_axis="p500"        /
+&parameter cmor_name="ps"                           code="134" project_mip_table="AERmon"       units="Pa"            cell_methods="m"  /
+&parameter cmor_name="tntrl"                        code="72"  project_mip_table="AERmon"       units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntrs"                        code="62"  project_mip_table="AERmon"       units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="ua"                           code="131" project_mip_table="AERmon"       units="m s-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="AERmon"       units="m s-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="zg"                           code="156" project_mip_table="AERmon"       units="m"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="ta"                           code="130" project_mip_table="AERmonZ"      units="K"             cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="ua"                           code="131" project_mip_table="AERmonZ"      units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="AERmonZ"      units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="zg"                           code="156" project_mip_table="AERmonZ"      units="m"             cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="cct"                          code="217" project_mip_table="Amon"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="cl"                           code="223" project_mip_table="Amon"         units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="cli"                          code="154" project_mip_table="Amon"         units="kg kg-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clivi"                        code="150" project_mip_table="Amon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="clt"                          code="164" project_mip_table="Amon"         units="1"             cell_methods="m"  /
+&parameter cmor_name="clw"                          code="153" project_mip_table="Amon"         units="kg kg-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clwvi"                        code="231" project_mip_table="Amon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="hfls"                         code="147" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hfss"                         code="146" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hur"                          code="157" project_mip_table="Amon"         units="1"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="hurs"                         code="55"  project_mip_table="Amon"         units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="hus"                          code="133" project_mip_table="Amon"         units="1"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="huss"                         code="54"  project_mip_table="Amon"         units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="mc"                           code="9"   project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="prc"                          code="143" project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prsn"                         code="144" project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prw"                          code="230" project_mip_table="Amon"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="ps"                           code="134" project_mip_table="Amon"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="psl"                          code="151" project_mip_table="Amon"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rlus"                         code="205" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rlut"                         code="179" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rlutcs"                       code="188" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdscs"                       code="50"  project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdt"                         code="184" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsus"                         code="204" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsuscs"                       code="51"  project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="rsut"                         code="203" project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sfcWind"                      code="171" project_mip_table="Amon"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="ta"                           code="130" project_mip_table="Amon"         units="K"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="tas"                          code="167" project_mip_table="Amon"         units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="tasmax"                       code="201" project_mip_table="Amon"         units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="tasmin"                       code="202" project_mip_table="Amon"         units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="tauu"                         code="180" project_mip_table="Amon"         units="Pa"            cell_methods="m" positive="d"  /
+&parameter cmor_name="tauv"                         code="181" project_mip_table="Amon"         units="Pa"            cell_methods="m" positive="d"  /
+&parameter cmor_name="ts"                           code="169" project_mip_table="Amon"         units="K"             cell_methods="m"  /
+&parameter cmor_name="ua"                           code="131" project_mip_table="Amon"         units="m s-1"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="uas"                          code="165" project_mip_table="Amon"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="va"                           code="132" project_mip_table="Amon"         units="m s-1"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="vas"                          code="166" project_mip_table="Amon"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="wap"                          code="135" project_mip_table="Amon"         units="Pa s-1"        cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="zg"                           code="156" project_mip_table="Amon"         units="m"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="ps"                           code="134" project_mip_table="CF3hr"        units="Pa"            cell_methods="p"  /
+&parameter cmor_name="psl"                          code="151" project_mip_table="CF3hr"        units="Pa"            cell_methods="p"  /
+&parameter cmor_name="rsuscs"                       code="53"  project_mip_table="CF3hr"        units="W m-2"         cell_methods="p" positive="u"  /
+&parameter cmor_name="ta"                           code="130" project_mip_table="CF3hr"        units="K"             cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="ts"                           code="169" project_mip_table="CF3hr"        units="K"             cell_methods="p"  /
+&parameter cmor_name="albisccp"                                                                    project_mip_table="CFday"        units="1"             cell_methods="m"  /
+&parameter cmor_name="cct"                          code="217" project_mip_table="CFday"        units="Pa"            cell_methods="m"  /
+&parameter cmor_name="cl"                           code="223" project_mip_table="CFday"        units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clcalipso"                                                                   project_mip_table="CFday"        units="%"             cell_methods="m" z_axis="alt40"       /
+&parameter cmor_name="clhcalipso"                                                                  project_mip_table="CFday"        units="%"             cell_methods="m" z_axis="p220"        /
+&parameter cmor_name="cli"                          code="154" project_mip_table="CFday"        units="kg kg-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clisccp"                      name="clisccp_c1,clisccp_c2,clisccp_c3,clisccp_c4,clisccp_c5,clisccp_c6,clisccp_c7,clisccp_c8,clisccp_c9,clisccp_c10,clisccp_c11,clisccp_c12,clisccp_c13,clisccp_c14,clisccp_c15,clisccp_c16,clisccp_c17,clisccp_c18,clisccp_c19,clisccp_c20,clisccp_c21,clisccp_c22,clisccp_c23,clisccp_c24,clisccp_c25,clisccp_c26,clisccp_c27,clisccp_c28,clisccp_c29,clisccp_c30,clisccp_c31,clisccp_c32,clisccp_c33,clisccp_c34,clisccp_c35,clisccp_c36,clisccp_c37,clisccp_c38,clisccp_c39,clisccp_c40,clisccp_c41,clisccp_c42,clisccp_c43,clisccp_c44,clisccp_c45,clisccp_c46,clisccp_c47,clisccp_c48,clisccp_c49"            project_mip_table="CFday"        units="%"             cell_methods="m" character_axis="tau"      z_axis="plev7c"      /
+&parameter cmor_name="clivi"                        code="150" project_mip_table="CFday"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="cllcalipso"                                                                  project_mip_table="CFday"        units="%"             cell_methods="m" z_axis="p840"        /
+&parameter cmor_name="clmcalipso"                                                                  project_mip_table="CFday"        units="%"             cell_methods="m" z_axis="p560"        /
+&parameter cmor_name="cltcalipso"                                                                  project_mip_table="CFday"        units="%"             cell_methods="m"  /
+&parameter cmor_name="cltisccp"                                                                    project_mip_table="CFday"        units="%"             cell_methods="m"  /
+&parameter cmor_name="clw"                          code="153" project_mip_table="CFday"        units="kg kg-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clwvi"                        code="231" project_mip_table="CFday"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="hur"                          code="157" project_mip_table="CFday"        units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="hus"                          code="133" project_mip_table="CFday"        units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="mc"                           code="9"   project_mip_table="CFday"        units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="pctisccp"                                                                    project_mip_table="CFday"        units="Pa"            cell_methods="m"  /
+&parameter cmor_name="ps"                           code="134" project_mip_table="CFday"        units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rlutcs"                       code="188" project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdscs"                       code="50"  project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdt"                         code="184" project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsuscs"                       code="51"  project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="rsut"                         code="203" project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="ta"                           code="130" project_mip_table="CFday"        units="K"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="ta700"                        code="130" project_mip_table="CFday"        units="K"             cell_methods="m" z_axis="p700"        /
+&parameter cmor_name="ua"                           code="131" project_mip_table="CFday"        units="m s-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="CFday"        units="m s-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="wap"                          code="135" project_mip_table="CFday"        units="Pa s-1"        cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="wap500"                       code="135" project_mip_table="CFday"        units="Pa s-1"        cell_methods="m" z_axis="p500"        /
+&parameter cmor_name="zg"                           code="156" project_mip_table="CFday"        units="m"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="albisccp"                                                                    project_mip_table="CFmon"        units="1"             cell_methods="m"  /
+&parameter cmor_name="clcalipso"                                                                   project_mip_table="CFmon"        units="%"             cell_methods="m" z_axis="alt40"       /
+&parameter cmor_name="clhcalipso"                                                                  project_mip_table="CFmon"        units="%"             cell_methods="m" z_axis="p220"        /
+&parameter cmor_name="clisccp"                      name="clisccp_c1,clisccp_c2,clisccp_c3,clisccp_c4,clisccp_c5,clisccp_c6,clisccp_c7,clisccp_c8,clisccp_c9,clisccp_c10,clisccp_c11,clisccp_c12,clisccp_c13,clisccp_c14,clisccp_c15,clisccp_c16,clisccp_c17,clisccp_c18,clisccp_c19,clisccp_c20,clisccp_c21,clisccp_c22,clisccp_c23,clisccp_c24,clisccp_c25,clisccp_c26,clisccp_c27,clisccp_c28,clisccp_c29,clisccp_c30,clisccp_c31,clisccp_c32,clisccp_c33,clisccp_c34,clisccp_c35,clisccp_c36,clisccp_c37,clisccp_c38,clisccp_c39,clisccp_c40,clisccp_c41,clisccp_c42,clisccp_c43,clisccp_c44,clisccp_c45,clisccp_c46,clisccp_c47,clisccp_c48,clisccp_c49"            project_mip_table="CFmon"        units="%"             cell_methods="m" character_axis="tau"      z_axis="plev7c"      /
+&parameter cmor_name="cllcalipso"                                                                  project_mip_table="CFmon"        units="%"             cell_methods="m" z_axis="p840"        /
+&parameter cmor_name="clmcalipso"                                                                  project_mip_table="CFmon"        units="%"             cell_methods="m" z_axis="p560"        /
+&parameter cmor_name="cltcalipso"                                                                  project_mip_table="CFmon"        units="%"             cell_methods="m"  /
+&parameter cmor_name="cltisccp"                                                                    project_mip_table="CFmon"        units="%"             cell_methods="m"  /
+&parameter cmor_name="dmc"                          code="12"  project_mip_table="CFmon"        units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="hur"                          code="157" project_mip_table="CFmon"        units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="hus"                          code="133" project_mip_table="CFmon"        units="1"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="mcd"                          code="11"  project_mip_table="CFmon"        units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="mcu"                          code="10"  project_mip_table="CFmon"        units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="pctisccp"                                                                    project_mip_table="CFmon"        units="Pa"            cell_methods="m"  /
+&parameter cmor_name="ps"                           code="134" project_mip_table="CFmon"        units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rld"                          code="3"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="d" z_axis="alevhalf"    /
+&parameter cmor_name="rldcs"                        code="7"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="d" z_axis="alevhalf"    /
+&parameter cmor_name="rlu"                          code="1"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="rlucs"                        code="5"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="rsd"                          code="4"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="d" z_axis="alevhalf"    /
+&parameter cmor_name="rsu"                          code="2"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="rsucs"                        code="6"   project_mip_table="CFmon"        units="W m-2"         cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="smc"                          code="13"  project_mip_table="CFmon"        units="kg m-2 s-1"    cell_methods="m" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="ta"                           code="130" project_mip_table="CFmon"        units="K"             cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tnhusc"                       code="35"  project_mip_table="CFmon"        units="day-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntc"                         code="5"   project_mip_table="CFmon"        units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="clivi"                        code="150" project_mip_table="E3hr"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="clwvi"                        code="231" project_mip_table="E3hr"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="prw"                          code="230" project_mip_table="E3hr"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="psl"                          code="151" project_mip_table="E3hr"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rlut"                         code="179" project_mip_table="E3hr"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rlutcs"                       code="188" project_mip_table="E3hr"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsdt"                         code="184" project_mip_table="E3hr"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsut"                         code="203" project_mip_table="E3hr"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sfcWind"                      code="171" project_mip_table="E3hr"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="uas"                          code="165" project_mip_table="E3hr"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="vas"                          code="166" project_mip_table="E3hr"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="aerasymbnd"                   code="13"  project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="spectband" z_axis="alevel"      /
+&parameter cmor_name="aeroptbnd"                    code="11"  project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="spectband" z_axis="alevel"      /
+&parameter cmor_name="aerssabnd"                    code="12"  project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="spectband" z_axis="alevel"      /
+&parameter cmor_name="albdiffbnd"                   code="81,82" project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="spectband"  /
+&parameter cmor_name="albdirbnd"                    code="79,80" project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="spectband"  /
+&parameter cmor_name="clcalipso"                                                                   project_mip_table="E3hrPt"       units="%"             cell_methods="p" z_axis="alt40"       /
+&parameter cmor_name="clhcalipso"                                                                  project_mip_table="E3hrPt"       units="%"             cell_methods="p" z_axis="p220"        /
+&parameter cmor_name="clisccp"                      name="clisccp_c1,clisccp_c2,clisccp_c3,clisccp_c4,clisccp_c5,clisccp_c6,clisccp_c7,clisccp_c8,clisccp_c9,clisccp_c10,clisccp_c11,clisccp_c12,clisccp_c13,clisccp_c14,clisccp_c15,clisccp_c16,clisccp_c17,clisccp_c18,clisccp_c19,clisccp_c20,clisccp_c21,clisccp_c22,clisccp_c23,clisccp_c24,clisccp_c25,clisccp_c26,clisccp_c27,clisccp_c28,clisccp_c29,clisccp_c30,clisccp_c31,clisccp_c32,clisccp_c33,clisccp_c34,clisccp_c35,clisccp_c36,clisccp_c37,clisccp_c38,clisccp_c39,clisccp_c40,clisccp_c41,clisccp_c42,clisccp_c43,clisccp_c44,clisccp_c45,clisccp_c46,clisccp_c47,clisccp_c48,clisccp_c49"            project_mip_table="E3hrPt"       units="%"             cell_methods="p" character_axis="tau"      z_axis="plev7c"      /
+&parameter cmor_name="cllcalipso"                                                                  project_mip_table="E3hrPt"       units="%"             cell_methods="p" z_axis="p840"        /
+&parameter cmor_name="clmcalipso"                                                                  project_mip_table="E3hrPt"       units="%"             cell_methods="p" z_axis="p560"        /
+&parameter cmor_name="cltcalipso"                                                                  project_mip_table="E3hrPt"       units="%"             cell_methods="p"  /
+&parameter cmor_name="hus"                          code="133" project_mip_table="E3hrPt"       units="1"             cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="hus7h"                        code="133" project_mip_table="E3hrPt"       units="1"             cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="ps"                           code="134" project_mip_table="E3hrPt"       units="Pa"            cell_methods="p"  /
+&parameter cmor_name="rsucs"                        code="6"   project_mip_table="E3hrPt"       units="W m-2"         cell_methods="p" positive="u" z_axis="alevhalf"    /
+&parameter cmor_name="solbnd"                       code="184" project_mip_table="E3hrPt"       units="W m-2"         cell_methods="p" character_axis="spectband"  /
+&parameter cmor_name="ta7h"                         code="130" project_mip_table="E3hrPt"       units="K"             cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="ua7h"                         code="131" project_mip_table="E3hrPt"       units="m s-1"         cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="va7h"                         code="132" project_mip_table="E3hrPt"       units="m s-1"         cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="wap7h"                        code="135" project_mip_table="E3hrPt"       units="Pa s-1"        cell_methods="p" z_axis="plev7h"      /
+&parameter cmor_name="zmlwaero"                     code="78"  project_mip_table="E6hrZ"        units="K d-1"         cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="zmswaero"                     code="77"  project_mip_table="E6hrZ"        units="K d-1"         cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="clt"                          code="164" project_mip_table="Eday"         units="1"             cell_methods="m"  /
+&parameter cmor_name="hfls"                         code="147" project_mip_table="Eday"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hfss"                         code="146" project_mip_table="Eday"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hus"                          code="133" project_mip_table="Eday"         units="1"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="hus850"                       code="133" project_mip_table="Eday"         units="1"             cell_methods="m" z_axis="p850"        /
+&parameter cmor_name="mrrob"                        code="161" project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prw"                          code="230" project_mip_table="Eday"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="rls"                          code="177" project_mip_table="Eday"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rss"                          code="176" project_mip_table="Eday"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="snm"                          code="218" project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="ta"                           code="130" project_mip_table="Eday"         units="K"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="ta500"                        code="130" project_mip_table="Eday"         units="K"             cell_methods="m" z_axis="p500"        /
+&parameter cmor_name="ta850"                        code="130" project_mip_table="Eday"         units="K"             cell_methods="m" z_axis="p850"        /
+&parameter cmor_name="tauu"                         code="180" project_mip_table="Eday"         units="Pa"            cell_methods="m" positive="d"  /
+&parameter cmor_name="tauv"                         code="181" project_mip_table="Eday"         units="Pa"            cell_methods="m" positive="d"  /
+&parameter cmor_name="tdps"                         code="168" project_mip_table="Eday"         units="K"             cell_methods="m"  /
+&parameter cmor_name="ts"                           code="169" project_mip_table="Eday"         units="K"             cell_methods="m"  /
+&parameter cmor_name="ua"                           code="131" project_mip_table="Eday"         units="m s-1"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="Eday"         units="m s-1"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="wap"                          code="135" project_mip_table="Eday"         units="Pa s-1"        cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="zg"                           code="156" project_mip_table="Eday"         units="m"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="epfy"                                                                        project_mip_table="EdayZ"        units="m3 s-2"        cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="epfz"                                                                        project_mip_table="EdayZ"        units="m3 s-2"        cell_methods="m" positive="u" z_axis="plev39"      /
+&parameter cmor_name="hus"                          code="133" project_mip_table="EdayZ"        units="1"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="psitem"                                                                      project_mip_table="EdayZ"        units="kg s-1"        cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="ta"                           code="130" project_mip_table="EdayZ"        units="K"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="ua"                           code="131" project_mip_table="EdayZ"        units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendepfd"                                                                   project_mip_table="EdayZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="va"                           code="132" project_mip_table="EdayZ"        units="m s-1"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="vtem"                                                                        project_mip_table="EdayZ"        units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="wtem"                                                                        project_mip_table="EdayZ"        units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="zg"                           code="156" project_mip_table="EdayZ"        units="m"             cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="clcalipsoice"                                                                project_mip_table="Emon"         units="%"             cell_methods="m" z_axis="alt40"       /
+&parameter cmor_name="clcalipsoliq"                                                                project_mip_table="Emon"         units="%"             cell_methods="m" z_axis="alt40"       /
+&parameter cmor_name="climodis"                                                                    project_mip_table="Emon"         units="%"             cell_methods="m"  /
+&parameter cmor_name="cltmodis"                                                                    project_mip_table="Emon"         units="%"             cell_methods="m"  /
+&parameter cmor_name="clwmodis"                                                                    project_mip_table="Emon"         units="%"             cell_methods="m"  /
+&parameter cmor_name="co23D"                        code="1"   project_mip_table="Emon"         units="kg kg-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="hus"                          code="133" project_mip_table="Emon"         units="1"             cell_methods="m" z_axis="plev7h"      /
+&parameter cmor_name="hus27"                        code="133" project_mip_table="Emon"         units="1"             cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="ps"                           code="134" project_mip_table="Emon"         units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rls"                          code="177" project_mip_table="Emon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rss"                          code="176" project_mip_table="Emon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sfcWindmax"                   code="216" project_mip_table="Emon"         units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="ta27"                         code="130" project_mip_table="Emon"         units="K"             cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="tdps"                         code="168" project_mip_table="Emon"         units="K"             cell_methods="m"  /
+&parameter cmor_name="tnhuspbl"                     code="31"  project_mip_table="Emon"         units="day-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tnhusscp"                     code="36"  project_mip_table="Emon"         units="day-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntpbl"                       code="1"   project_mip_table="Emon"         units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntrl27"                      code="72"  project_mip_table="Emon"         units="K day-1"       cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="tntrs27"                      code="62"  project_mip_table="Emon"         units="K day-1"       cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="tntscp"                       code="6"   project_mip_table="Emon"         units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="ua27"                         code="131" project_mip_table="Emon"         units="m s-1"         cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="va27"                         code="132" project_mip_table="Emon"         units="m s-1"         cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="wap"                          code="135" project_mip_table="Emon"         units="Pa s-1"        cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="zg27"                         code="156" project_mip_table="Emon"         units="m"             cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="epfy"                                                                        project_mip_table="EmonZ"        units="m3 s-2"        cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="epfz"                                                                        project_mip_table="EmonZ"        units="m3 s-2"        cell_methods="m" positive="u" z_axis="plev39"      /
+&parameter cmor_name="tntc"                         code="5"   project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="tntnogw"                      code="3"   project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="tntogw"                       code="4"   project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="tntrl"                        code="72"  project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="tntrs"                        code="62"  project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="tntscp"                       code="6"   project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendepfd"                                                                   project_mip_table="EmonZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="vtem"                                                                        project_mip_table="EmonZ"        units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="wtem"                                                                        project_mip_table="EmonZ"        units="m s-1"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="snm"                          code="218" project_mip_table="LImon"        units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="mrro"                         code="160" project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sitemptop"                    code="102" project_mip_table="SIday"        units="K"             cell_methods="m"  /
+&parameter cmor_name="siconca"                      code="97"  project_mip_table="SImon"        units="1"             cell_methods="m" character_axis="typesi"    /
+&parameter cmor_name="sitemptop"                    code="102" project_mip_table="SImon"        units="K"             cell_methods="m"  /
+&parameter cmor_name="clt"                          code="164" project_mip_table="day"          units="1"             cell_methods="m"  /
+&parameter cmor_name="hfls"                         code="147" project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hfss"                         code="146" project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="hur"                          code="157" project_mip_table="day"          units="1"             cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="hurs"                         code="55"  project_mip_table="day"          units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="hursmax"                      code="55"  project_mip_table="day"          units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="hursmin"                      code="55"  project_mip_table="day"          units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="hus"                          code="133" project_mip_table="day"          units="1"             cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="huss"                         code="54"  project_mip_table="day"          units="1"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="mrro"                         code="160" project_mip_table="day"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prc"                          code="143" project_mip_table="day"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prsn"                         code="144" project_mip_table="day"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="psl"                          code="151" project_mip_table="day"          units="Pa"            cell_methods="m"  /
+&parameter cmor_name="rlus"                         code="205" project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rlut"                         code="179" project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsus"                         code="204" project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sfcWind"                      code="171" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="sfcWindmax"                   code="216" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="ta"                           code="130" project_mip_table="day"          units="K"             cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="tas"                          code="167" project_mip_table="day"          units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="tasmax"                       code="201" project_mip_table="day"          units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="tasmin"                       code="202" project_mip_table="day"          units="K"             cell_methods="m" z_axis="height2m"    /
+&parameter cmor_name="ua"                           code="131" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="uas"                          code="165" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="va"                           code="132" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="vas"                          code="166" project_mip_table="day"          units="m s-1"         cell_methods="m" z_axis="height10m"   /
+&parameter cmor_name="wap"                          code="135" project_mip_table="day"          units="Pa s-1"        cell_methods="m" z_axis="plev8"       /
+&parameter cmor_name="zg"                           code="156" project_mip_table="day"          units="m"             cell_methods="m" z_axis="plev8"       /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables incl character dimension !
+! listed in the following:                     !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="cfadLidarsr532"                                                              project_mip_table="E3hrPt"       units="1"             cell_methods="p" character_axis="scatratio" z_axis="alt40"       /
+&parameter cmor_name="cfadLidarsr532"                                                              project_mip_table="Emon"         units="1"             cell_methods="m" character_axis="scatratio" z_axis="alt40"       /
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Diagnosed Variables listed in the following: !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+&parameter cmor_name="pr"                                      project_mip_table="3hr"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rlds"                                    project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rldscs"                                  project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsds"                                    project_mip_table="3hr"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="pr"                                      project_mip_table="6hrPlev"      units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="snw"                                     project_mip_table="6hrPlevPt"    units="kg m-2"        cell_methods="p"  /
+&parameter cmor_name="od550aer"                                project_mip_table="AERday"       units="1"             cell_methods="m"  /
+&parameter cmor_name="sfo3max"                                 project_mip_table="AERday"       units="mol mol-1"     cell_methods="m"  /
+&parameter cmor_name="abs550aer"                               project_mip_table="AERmon"       units="1"             cell_methods="m"  /
+&parameter cmor_name="o3"                                      project_mip_table="AERmon"       units="mol mol-1"     cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="od550aer"                                project_mip_table="AERmon"       units="1"             cell_methods="m"  /
+&parameter cmor_name="od550lt1aer"                             project_mip_table="AERmon"       units="1"             cell_methods="m"  /
+&parameter cmor_name="o3"                                      project_mip_table="AERmonZ"      units="mol mol-1"     cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="co2"                                     project_mip_table="Amon"         units="mol mol-1"     cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="co2mass"                                 project_mip_table="Amon"         units="kg"            cell_methods="m"  /
+&parameter cmor_name="co2massClim"                             project_mip_table="Amon"         units="kg"            cell_methods="c"  /
+&parameter cmor_name="evspsbl"                                 project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fco2antt"                                project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fco2fos"                                 project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="fco2nat"                                 project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="o3"                                      project_mip_table="Amon"         units="mol mol-1"     cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="o3Clim"                                  project_mip_table="Amon"         units="mol mol-1"     cell_methods="c" z_axis="plev19"      /
+&parameter cmor_name="pfull"                                   project_mip_table="Amon"         units="Pa"            cell_methods="c" z_axis="alevel"      /
+&parameter cmor_name="phalf"                                   project_mip_table="Amon"         units="Pa"            cell_methods="c" z_axis="alevhalf"    /
+&parameter cmor_name="pr"                                      project_mip_table="Amon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rlds"                                    project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rldscs"                                  project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsds"                                    project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsutcs"                                  project_mip_table="Amon"         units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="pfull"                                   project_mip_table="CF3hr"        units="Pa"            cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="phalf"                                   project_mip_table="CF3hr"        units="Pa"            cell_methods="p" z_axis="alevhalf"    /
+&parameter cmor_name="pfull"                                   project_mip_table="CFday"        units="Pa"            cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="phalf"                                   project_mip_table="CFday"        units="Pa"            cell_methods="m" z_axis="alevhalf"    /
+&parameter cmor_name="rldscs"                                  project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsutcs"                                  project_mip_table="CFday"        units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="tnhusmp"                                 project_mip_table="CFmon"        units="day-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tnhusscpbl"                              project_mip_table="CFmon"        units="day-1"         cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntmp"                                   project_mip_table="CFmon"        units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntr"                                    project_mip_table="CFmon"        units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="tntscpbl"                                project_mip_table="CFmon"        units="K day-1"       cell_methods="m" z_axis="alevel"      /
+&parameter cmor_name="prra"                                    project_mip_table="E3hr"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rsutcs"                                  project_mip_table="E3hr"         units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="o3"                                      project_mip_table="E3hrPt"       units="mol mol-1"     cell_methods="p" z_axis="alevel"      /
+&parameter cmor_name="aod550volso4"                            project_mip_table="Eday"         units="1e-09"         cell_methods="m"  /
+&parameter cmor_name="ares"                                    project_mip_table="Eday"         units="s m-1"         cell_methods="m"  /
+&parameter cmor_name="evspsbl"                                 project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="mrros"                                   project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="prra"                                    project_mip_table="Eday"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rzwc"                                    project_mip_table="Eday"         units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="utendnogw"                               project_mip_table="EdayZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendogw"                                project_mip_table="EdayZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendvtem"                               project_mip_table="EdayZ"        units="m s-1 d-1"     cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendwtem"                               project_mip_table="EdayZ"        units="m s-1 d-1"     cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="netAtmosLandCO2Flux"                     project_mip_table="Emon"         units="kg m-2 s-1"    cell_methods="m" positive="d"  /
+&parameter cmor_name="tntmp27"                                 project_mip_table="Emon"         units="K day-1"       cell_methods="m" z_axis="plev27"      /
+&parameter cmor_name="utendnogw"                               project_mip_table="Emon"         units="m s-2"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="utendogw"                                project_mip_table="Emon"         units="m s-2"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="vtendnogw"                               project_mip_table="Emon"         units="m s-2"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="vtendogw"                                project_mip_table="Emon"         units="m s-2"         cell_methods="m" z_axis="plev19"      /
+&parameter cmor_name="tntmp"                                   project_mip_table="EmonZ"        units="K day-1"       cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="utendnogw"                               project_mip_table="EmonZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="vtendnogw"                               project_mip_table="EmonZ"        units="m s-2"         cell_methods="m" z_axis="plev39"      /
+&parameter cmor_name="snw"                                     project_mip_table="LImon"        units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="mrros"                                   project_mip_table="Lmon"         units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="sifllatstop"                             project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="sifllwdtop"                              project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="sifllwutop"                              project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="siflsenstop"                             project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="u"  /
+&parameter cmor_name="siflswdtop"                              project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="siflswutop"                              project_mip_table="SImon"        units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="pr"                                      project_mip_table="day"          units="kg m-2 s-1"    cell_methods="m"  /
+&parameter cmor_name="rlds"                                    project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="rsds"                                    project_mip_table="day"          units="W m-2"         cell_methods="m" positive="d"  /
+&parameter cmor_name="snw"                                     project_mip_table="day"          units="kg m-2"        cell_methods="m"  /
+&parameter cmor_name="areacella"                               project_mip_table="fx"           units="m2"            cell_methods="n"  /
+&parameter cmor_name="orog"                                    project_mip_table="fx"           units="m"             cell_methods="n"  /
