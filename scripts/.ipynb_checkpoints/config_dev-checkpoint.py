@@ -16,12 +16,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--activity")
 parser.add_argument("--experiment")
 
-
-args = parser.parse_args()
-activity = parser.activity
-experiment = parser.experiment
-
 project_dir = Path.cwd().parents[0]
+
+
 data_path = Path.cwd().parents[2]
 
 
@@ -133,6 +130,52 @@ for experiment_id in ["hist"]:#CV_dict["CV"]["experiment_id"]:
             cmorization_string = "cdo cmor,{},i={} {}".format(MIP_table_file,cdocmorinfo_file, input_data_file)
             #print(cmorization_string)
             os.system(cmorization_string)
+
+
+# In[14]:
+
+
+os.path.exists(MIP_table_file)
+
+
+# In[16]:
+
+
+os.path.exists(cdocmorinfo_file)
+
+
+# In[17]:
+
+
+os.path.exists(input_data_file)
+
+
+# In[18]:
+
+
+input_data_file
+
+
+# In[19]:
+
+
+MIP_table_file
+
+
+# In[20]:
+
+
+cdocmorinfo_file
+
+
+# In[21]:
+
+
+cmorization_string
+
+
+# In[ ]:
+
 
 
 

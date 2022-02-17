@@ -1,1 +1,1 @@
-/home/bjoern/Documents/Projects/CMOR/cmip6-cmor-tables/data/CMIP6/GrandEnsemble/MPI-M/MPI-ESM1-2-LR/hist/r1i1p1f1/Omon/rho/gn/v20220215/rho_Omon_MPI-ESM1-2-LR_hist_r1i1p1f1_gn_185001-186012.nc
+/mnt/lustre02/work/uo1075/u301101/Doktorarbeit/Data/CMIP6/GrandEnsemble/MPI-M/MPI-ESM1-2-LR/hist/r1i1p1f1/Omon/rho/gn/v20220217/rho_Omon_MPI-ESM1-2-LR_hist_r1i1p1f1_gn_185001-185012.nc
