@@ -4248,7 +4248,7 @@
             "frequency": "mon", 
             "modeling_realm": "ocean", 
             "standard_name": "sea_water_temperature", 
-            "units": "K", 
+            "units": "C", 
             "cell_methods": "area: mean where sea time: mean", 
             "cell_measures": "area: areacello volume: volcello", 
             "long_name": "Sea Water Insitu Temperature", 
