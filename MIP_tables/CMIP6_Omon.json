@@ -4244,6 +4244,24 @@
             "ok_min_mean_abs": "", 
             "ok_max_mean_abs": ""
         }, 
+        "to": {
+            "frequency": "mon", 
+            "modeling_realm": "ocean", 
+            "standard_name": "sea_water_temperature", 
+            "units": "K", 
+            "cell_methods": "area: mean where sea time: mean", 
+            "cell_measures": "area: areacello volume: volcello", 
+            "long_name": "Sea Water Insitu Temperature", 
+            "comment": "Calculated via", 
+            "dimensions": "longitude latitude olevel time", 
+            "out_name": "to", 
+            "type": "real", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": ""
+        },
         "so": {
             "frequency": "mon", 
             "modeling_realm": "ocean", 
