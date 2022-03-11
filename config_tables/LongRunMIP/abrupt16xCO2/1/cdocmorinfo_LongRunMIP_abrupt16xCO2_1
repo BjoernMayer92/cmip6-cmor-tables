@@ -29,5 +29,6 @@ realization_index=1
 physics_index=1
 forcing_index=1
 initialization_index=1
+version_date="v20220217"
 
-drs_root="/home/bjoern/Documents/Projects/CMOR/cmip6-cmor-tables/data"
+drs_root="/mnt/lustre02/work/uo1075/u301101/Doktorarbeit/Data"
